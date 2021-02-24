@@ -1,6 +1,30 @@
+# Rename changeme to the name of the worker
+name = "changeme-dev"
 type = "webpack"
-zone_id = ""
-account_id = ""
-route = ""
 workers_dev = true
+vars = { ENVIRONMENT = "dev" }
 webpack_config = "webpack.config.js"
+
+[env.staging]
+# Rename changeme to the name of the worker
+name = "changeme-staging"
+vars = { ENVIRONMENT = "staging" }
+# Use a staging route
+route = "api.staging.mindfulchef.com/namespace/resource*"
+webpack_config = "webpack.production.js"
+
+[env.uat]
+# Rename changeme to the name of the worker
+name = "changeme-uat"
+vars = { ENVIRONMENT = "uat" }
+# Use a UAT route
+route = "api.uat.mindfulchef.com/namespace/resource*"
+webpack_config = "webpack.production.js"
+
+[env.production]
+# Rename changeme to the name of the worker
+name = "changeme-production"
+vars = { ENVIRONMENT = "production" }
+# Use a production route
+route = "api.mindfulchef.com/namespace/resource*"
+webpack_config = "webpack.production.js"
