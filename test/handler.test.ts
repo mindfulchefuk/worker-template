@@ -1,23 +1,13 @@
-import { handleRequest } from '../src/handler'
+import { handleRequest } from '../src/handler';
 
 describe('handler returns response with request method', () => {
-  const methods = [
-    'GET',
-    'HEAD',
-    'POST',
-    'PUT',
-    'DELETE',
-    'CONNECT',
-    'OPTIONS',
-    'TRACE',
-    'PATCH',
-  ]
+  const methods = ['GET', 'HEAD', 'POST', 'PUT', 'DELETE', 'CONNECT', 'OPTIONS', 'TRACE', 'PATCH'];
   methods.forEach((method) => {
     it(method, async () => {
-      const result = await handleRequest(new Request('/', { method }))
-      const text = await result.text()
+      const result = await handleRequest(new Request('/', { method }));
+      const text = await result.text();
 
-      expect(text).toBe(`request method: ${method}`)
-    })
-  })
-})
+      expect(text).toBe(`request method: ${method}`);
+    });
+  });
+});
