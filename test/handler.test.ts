@@ -1,4 +1,3 @@
-import { expect } from 'chai'
 import { handleRequest } from '../src/handler'
 
 describe('handler returns response with request method', () => {
@@ -17,7 +16,8 @@ describe('handler returns response with request method', () => {
     it(method, async () => {
       const result = await handleRequest(new Request('/', { method }))
       const text = await result.text()
-      expect(text).to.include(method)
+
+      expect(text).toBe(`request method: ${method}`)
     })
   })
 })
