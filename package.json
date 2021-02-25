@@ -5,6 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
+    "deploy:staging": "wrangler publish --env staging",
+    "deploy:uat": "wrangler publish --env uat",
+    "deploy:production": "wrangler publish --env production",
     "dev": "NODE_ENV=development npm run build",
     "format": "prettier --write '**/*.{ts,js,css,json,md}'",
     "lint": "eslint ./src/**/*.ts",
