@@ -4,6 +4,9 @@ type = "webpack"
 workers_dev = true
 vars = { ENVIRONMENT = "dev" }
 webpack_config = "webpack.config.js"
+# Find these 2 values in our Cloudflare dashboard
+# account_id =
+# zone_id =
 
 [env.staging]
 # Rename changeme to the name of the worker
