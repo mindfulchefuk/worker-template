@@ -1,5 +1,9 @@
 # Cloudflare Worker Template
 
+[![Build Status](https://travis-ci.com/mindfulchefuk/worker-template.svg?token=yb9zXGyb3powtdAHP9q4&branch=main)](https://travis-ci.com/mindfulchefuk/worker-template)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/c0428c849c387f90dbab/test_coverage)](https://codeclimate.com/repos/6037dceed1aa9801a0010973/test_coverage)
+[![Maintainability](https://api.codeclimate.com/v1/badges/c0428c849c387f90dbab/maintainability)](https://codeclimate.com/repos/6037dceed1aa9801a0010973/maintainability)
+
 A batteries included template for kick starting a TypeScript Cloudflare Worker project.
 
 ## Getting Started
