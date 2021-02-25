@@ -15,7 +15,7 @@
 
 - [ ] Follows [12 Factor App](https://12factor.net/) methodologies
 - [ ] Follows [semantic versioning](https://semver.org/)
-- [ ] Handles and all possible errors and exceptions
+- [ ] Handles all possible errors and exceptions
 - [ ] Has **100%** test coverage
 - [ ] Contains a [well-formatted](https://keepachangelog.com/en/1.0.0/) entry in `CHANGELOG.md`
 
