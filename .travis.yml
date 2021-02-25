@@ -2,9 +2,6 @@ language: node_js
 node_js:
   - 14.15.1
 
-stage:
-  - test
-
 cache:
   npm: true
 
@@ -13,19 +10,10 @@ before_script:
   - chmod +x ./cc-test-reporter
   - ./cc-test-reporter before-build
 
-jobs:
-  include:
-    - stage: test
-      name: 'Unit tests and integration tests with test coverage'
-      script: npm run test:coverage
-
-    - stage: test
-      name: 'Code Linting'
-      script: npm run lint
-
-    - stage: audit
-      name: 'Security audits'
-      script: npm audit
+script:
+  - npm run test:coverage
+  - npm run lint
+  - npm audit
 
 after_script:
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
