@@ -1,0 +1,23 @@
+language: node_js
+node_js:
+  - 14.15.1
+
+stage:
+  - test
+
+cache:
+  npm: true
+
+jobs:
+  include:
+    - stage: test
+      name: 'Unit tests and integration tests'
+      script: npm test
+
+    - stage: test
+      name: 'Code Linting'
+      script: npm run lint
+
+    - stage: audit
+      name: 'Security audits'
+      script: npm audit
