@@ -26,5 +26,5 @@
 - [ ] Commit messages tell the truth about what changed
 - [ ] Commits are [signed](https://help.github.com/en/github/authenticating-to-github/signing-commits)
 - [ ] Commits [don't fix problems or reviews introduced in earlier commits](https://about.gitlab.com/blog/2018/06/07/keeping-git-commit-history-clean/#situation-3-i-need-to-add-remove-or-combine-commits) in this branch. [Rewrite history](https://git-scm.com/book/en/v2/Git-Tools-Rewriting-History)
-- [ ] This branch is rebased against the `main` branch
+- [ ] This branch is rebased against the `master` branch
 - [ ] This branch contains the user's initials and the Jira issue reference e.g. `ws/min-1234-add-some-feature`
