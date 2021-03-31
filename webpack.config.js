@@ -1,11 +1,11 @@
 const path = require('path');
-const webpack = require('webpack');
 
 const mode = 'development';
 
 module.exports = {
+  devtool: 'cheap-module-source-map',
   output: {
-    filename: `worker.js`,
+    filename: 'worker.js',
     path: path.join(__dirname, 'dist'),
   },
   mode,
