@@ -2,7 +2,7 @@
   "compilerOptions": {
     "outDir": "./dist",
     "module": "commonjs",
-    "target": "esnext",
+    "target": "ES6",
     "lib": ["esnext", "webworker"],
     "alwaysStrict": true,
     "strict": true,
