@@ -40,7 +40,7 @@ This template comes with Jest tests which simply test that the request handler c
 ## Formatting and Linting
 
 This template uses [`prettier`](https://prettier.io/) to format the project. To invoke, run `npm run format`. It also
-uses ESLint to lint the project. To invoke, run ` npm run lint` and `npm run lint:fix` to lint and fix linting errors.
+uses ESLint to lint the project. To invoke, run `npm run lint` and `npm run lint:fix` to lint and fix linting errors.
 
 ## Previewing and Publishing
 
